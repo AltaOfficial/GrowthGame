@@ -1,6 +1,10 @@
+import Navbar from "./components/Navbar";
+import Gamearea from "./components/Gamearea";
+
 const Gamepage = () => {
     return ( <div className="game">
-
+        <Navbar />
+        <Gamearea />
     </div> );
 }
 
