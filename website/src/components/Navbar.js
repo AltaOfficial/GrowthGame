@@ -1,4 +1,4 @@
-import logo from "../Logo/logo white transparent.png"
+import logo from "../images/Logo/logo white transparent.png";
 
 const Navbar = () => {
     return ( 
