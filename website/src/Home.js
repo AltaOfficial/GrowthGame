@@ -1,17 +1,12 @@
-import Navbar from "./components/Navbar";
+import Homenavbar from "./components/Homenavbar";
 
 const Home = () => {
     return (     
     <div className="App fill-black w-full h-full">
-    <Navbar></Navbar>
-    <div className="content">
-      <div className="homepage-part-1 bg-auto fill-black"></div>
-    </div>
-  </div> 
+    <Homenavbar></Homenavbar>
+    
+  </div>
   );
 }
-
-// the navbar on this page with be different from the one on the game page
-// this is not a nessasity
  
 export default Home;
