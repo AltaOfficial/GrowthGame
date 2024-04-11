@@ -1,10 +1,11 @@
 import Homenavbar from "./components/Homenavbar";
+import Imagebanner from "./components/Imagebanner";
 
 const Home = () => {
     return (     
-    <div className="App fill-black w-full h-full">
+    <div className="App">
     <Homenavbar></Homenavbar>
-    
+    <Imagebanner></Imagebanner>
   </div>
   );
 }

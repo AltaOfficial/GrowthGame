@@ -1,13 +1,15 @@
+import { appearance } from '../Utilities';
+
+let fill = (appearance === "dark") ? "#fff" : "#000";
+
 const Pageicon = () => {
-    var themeElement = document.getElementsByTagName("Theme")
-    console.log("here: " + themeElement.item(0));
     return (
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
         width="50.000000pt" height="50.000000pt" viewBox="0 0 500.000000 500.000000"
         preserveAspectRatio="xMidYMid meet">
        
        <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-       fill="#ffffff" stroke="none">
+       fill={fill} stroke="none">
        <path d="M1373 3657 c-367 -249 -536 -370 -543 -387 -12 -31 -190 -1145 -190
        -1191 0 -19 4 -39 8 -44 7 -11 89 -88 307 -291 72 -66 243 -226 380 -354 138
        -128 294 -273 347 -322 l98 -88 672 0 672 0 155 118 c86 64 329 248 539 406
