@@ -1,0 +1,85 @@
+[gd_scene load_steps=13 format=3 uid="uid://omemqgqpacjw"]
+
+[ext_resource type="Script" path="res://scenes/cookie.gd" id="1_0gq20"]
+[ext_resource type="Texture2D" uid="uid://cax6dljq3qy3w" path="res://sprites/cookie.png" id="1_he81d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxgj5"]
+atlas = ExtResource("1_he81d")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1o4cs"]
+atlas = ExtResource("1_he81d")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_by16h"]
+atlas = ExtResource("1_he81d")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6qmgr"]
+atlas = ExtResource("1_he81d")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hphxw"]
+atlas = ExtResource("1_he81d")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w8mt5"]
+atlas = ExtResource("1_he81d")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rwhxd"]
+atlas = ExtResource("1_he81d")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0l7jg"]
+atlas = ExtResource("1_he81d")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i8vw7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxgj5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1o4cs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_by16h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6qmgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hphxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w8mt5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rwhxd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0l7jg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gc8ho"]
+radius = 43.0
+
+[node name="Cookie" type="Area2D"]
+script = ExtResource("1_0gq20")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3.14844, 3.14844)
+sprite_frames = SubResource("SpriteFrames_i8vw7")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gc8ho")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
