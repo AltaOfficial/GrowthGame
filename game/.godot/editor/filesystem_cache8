@@ -1,0 +1,24 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1713816288
+export_presets.cfg::TextFile::-1::1712504892::0::1::::<><>::
+icon.svg::CompressedTexture2D::6139451879298066039::1712444444::1713815716::1::::<><>::
+level.tscn::PackedScene::5330402199860209495::1713816093::0::1::::<><>::uid://doyecicvft781::::res://sprites/sky.png<>uid://dw8jvw7pfirio::::res://sprites/Terrain.png<>uid://geb28oys8b6s::::res://scenes/main_character.tscn<>uid://omemqgqpacjw::::res://scenes/cookie.tscn
+main.gd::GDScript::-1::1712451760::0::1::::<>RefCounted<>::
+main.tscn::PackedScene::4268125056511041123::1712544023::0::1::::<><>::uid://ch7c7e68eiknv::::res://level.tscn
+world.tscn::PackedScene::-1::1712451760::0::1::::<><>::
+::res://scenes/::1713816108
+cookie.gd::GDScript::-1::1712502838::0::1::::<>Area2D<>::
+cookie.tscn::PackedScene::1007681491868538560::1712544023::0::1::::<><>::res://scenes/cookie.gd<>uid://cax6dljq3qy3w::::res://sprites/cookie.png
+MAIN SCREEN.gd::GDScript::-1::1712502143::0::1::::<>Node2D<>::
+MAIN SCREEN.tscn::PackedScene::8649658318147012484::1713816108::0::1::::<><>::res://scenes/MAIN SCREEN.gd
+main_character.gd::GDScript::-1::1712503568::0::1::::<>CharacterBody2D<>::
+main_character.tscn::PackedScene::429501262286252124::1712503571::0::1::::<><>::res://scenes/main_character.gd<>uid://r07ikovaf340::::res://sprites/playeridle.png
+::res://sprites/::1713815856
+backpack.png::CompressedTexture2D::1466839014961022233::1712462778::1713815856::1::::<><>::
+cookie.png::CompressedTexture2D::4822210232312185134::1712469207::1713815856::1::::<><>::
+foodbar.png::CompressedTexture2D::5277529328809510937::1712470768::1713815856::1::::<><>::
+playeridle.png::CompressedTexture2D::1246777563632948011::1712471104::1713815856::1::::<><>::
+playerjump2.png::CompressedTexture2D::3219781852908376266::1712471550::1713815856::1::::<><>::
+playerLevel1.png::CompressedTexture2D::1211075793604631989::1712462853::1713815856::1::::<><>::
+sky.png::CompressedTexture2D::8191697791906087300::1712464530::1713815856::1::::<><>::
+Terrain.png::CompressedTexture2D::8772126237242881106::1712463713::1713815856::1::::<><>::
